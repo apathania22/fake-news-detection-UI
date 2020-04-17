@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Fake New Score</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif;
+background-color:#DCDCDC;
+}
+.mySlides {display: none}
+
+
+body {
+  margin: 10;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+html,body{overflow-y: scroll; }
+
+#myVideo {
+  min-width: 100%; 
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+ul {
+  list-style-type: none;
+  position: fixed;
+  margin: 0;
+  padding: 20;
+  border-bottom: .5px solid white;
+  width: 100%; 
+  color: #f1f1f1;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #111;
+}
+#text{
+ text-align: center;
+ }
+ .content {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  height: 50:
+ 
+}
+ 
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top" style =" border-bottom: .5px solid white">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">ABOUT US</a>
+    <a href="#brand" class="w3-bar-item w3-button w3-padding-large w3-hide-small">NEWS</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">CIC</a>
+        <a href="#" class="w3-bar-item w3-button">UNB</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#brand" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ABOUT US</a>
+  <a href="#news" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">NEWS</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+</div>
+
+<div class="w3-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Video -->
+  <div class="mySlides w3-display-container w3-center">
+    <video autoplay muted loop id="myVideo">
+     <source src="earth.mp4" type="video/mp4">
+       Your browser does not support HTML5 video.
+    </video>
+   
+    <div class="content">
+      <h3>Our Vision</h3>
+      <p><b>We aim at creating an environment of trust by displaying the score for measuring the authenticity for the news that we usually come across our daily life.</b></p>   
+    </div>
+  </div>
+ 
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:100%; position:relative ; top: 50"  	id="brand">
+	<img src="news.jpg" alt="Paris" style="width:50%;" align="left" class="w3-hover-opacity">
+    <h1 class="w3-opacity"><i>The Two Dimensions </i></h1>
+    <p id ="text">Lets testify the correctness of the news you want, click the options below to know it.</p>
+    
+      <div class="w3-third w3-opacity" align="center">
+		  <button class="w3-button w3-black w3-margin-bottom" style="position:absolute;left:750px" onclick = "world_news">World News</button>
+     
+         <button class="w3-button w3-black w3-margin-bottom"  style="position:absolute;left:960px" onclick="document.getElementById('twitter').style.display='block'">Twitter News</button>
+     
+         <button class="w3-button w3-black w3-margin-bottom" style="position:absolute;left:1160px" onclick="document.getElementById('score').style.display='block'">Social Score</button>
+    </div>
+  </div>
+  <div class="w3-black" id="news">
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">The Three Components</h2>
+      <p class="w3-opacity w3-center"><i>These three modules of the project has the specific role in the vision of creating the awareness amongest people about the news they study on regular basis.</i></p><br>
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="daily.jpg" alt="News" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="socialmedia.jpg" alt="Social News" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="fakescore.png" alt="Social Score" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Drop us a note!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Fredericton,NB,CA<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +01 151515<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: CIC@unb.ca<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+
+<img src="contact_us.png" class="w3-image w3-greyscale-min" style="width:100%">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p class="w3-medium">Author <a href="https://www.cic.com" target="_blank">CIC</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+</body>
+</html>
